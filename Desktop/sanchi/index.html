@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles"></div>
+
+    <!-- Section 1: Welcome -->
+    <section id="welcome" class="glass-panel active">
+        <h1 class="dancing-text">Hey there...</h1>
+        <p id="typewriter"></p>
+        <button id="start-btn" class="hidden cute-btn">Click Me ✨</button>
+    </section>
+
+    <!-- Section 2: Mini Game -->
+    <section id="game" class="glass-panel hidden">
+        <h2>Catch the Heart!</h2>
+        <p>You have to catch it 3 times to unlock a secret 🙈</p>
+        <div class="game-area">
+            <div id="moving-heart">💖</div>
+        </div>
+        <p id="score-display">Score: 0 / 3</p>
+    </section>
+
+    <!-- Section 3: Special Messages -->
+    <section id="messages" class="glass-panel hidden">
+        <h2>A few things about you...</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">?</div>
+                    <div class="card-back">Your smile makes my day faster than coffee ☕</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">?</div>
+                    <div class="card-back">You have the best laugh in the world 🎶</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">?</div>
+                    <div class="card-back">You're just effortlessly cute 🌸</div>
+                </div>
+            </div>
+        </div>
+        <button id="next-btn" class="cute-btn mt-4 hidden">There's more...</button>
+    </section>
+
+    <!-- Section 4: The Letter -->
+    <section id="letter-section" class="glass-panel hidden">
+        <h2 class="dancing-text">A Little Letter For You 💌</h2>
+        <div class="envelope-container" id="envelope">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="letter">
+                    <p>Even though we're miles apart right now, you somehow manage to be the closest person to my heart. Long distance is tough, but you make every single day brighter. You've supported me through so much, and knowing that I have you by my side—even virtually—makes my life infinitely better. Your texts, your calls that feel like home, and just the thought of you give me the strength I never knew I had. You are my absolute favorite person in the world! 🥺💕</p>
+                </div>
+            </div>
+        </div>
+        <p class="click-instruction">Tap the envelope to open!</p>
+        <button id="next-to-question-btn" class="cute-btn hidden mt-4">One last thing...</button>
+    </section>
+
+    <!-- Section 5: The Question -->
+    <section id="question" class="glass-panel hidden">
+        <h1 class="dancing-text big">So, I was wondering...</h1>
+        <p>Would you like to go on a date with me when we finally close the distance? 🥺</p>
+        <div class="buttons-container">
+            <button id="yes-btn" class="cute-btn yes">YES! 💕</button>
+            <button id="no-btn" class="cute-btn no">No 😢</button>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="success" class="hidden fullscreen">
+        <h1 class="dancing-text massive">YAY! 🎉</h1>
+        <p>I knew you'd say yes! Distance means nothing when you mean everything. ❤️</p>
+        <div class="floating-hearts">💖🌸✨💖🌸✨</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
